@@ -1,5 +1,5 @@
 # Step-by-Step WebGPU Graphics Programming (36) 
-## Create a torus Wireframe
+## Create a 3D Textured Cylinder
 
 This is the source code for the 36th part of a series YouTube videos on step-by-step WebGPU graphics programming.
 
