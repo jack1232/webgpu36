@@ -184,6 +184,10 @@ export const CylinderData = (rin = 0.7, rout = 1.5, height = 3, n = 30, center:v
         u6 = ul * (0.5 + Math.atan2(p6[0]/rin,  p6[2]/rin)/Math.PI/2);
         u7 = ul * (0.5 + Math.atan2(p7[0]/rin,  p7[2]/rin)/Math.PI/2);
 
+        let u2i = u2*rin/rout;
+        let u3i = u3*rin/rout;
+        let u6i = u6*rin/rout;
+        let u7i = u7*rin/rout;
         uv.push([
             //top face
             u0, vl, u4, vl, u7, 0,
@@ -198,8 +202,8 @@ export const CylinderData = (rin = 0.7, rout = 1.5, height = 3, n = 30, center:v
             u5, 0,  u4, vl, u0, vl,
 
             //inner face
-            u2, 0,  u3, vl, u7, vl,
-            u7, vl, u6, 0,  u2, 0
+            u2i, 0,  u3i, vl, u7i, vl,
+            u7i, vl, u6i, 0,  u2i, 0
         ]);
     }        
 
